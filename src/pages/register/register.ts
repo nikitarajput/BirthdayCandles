@@ -24,7 +24,7 @@ export class RegisterPage {
   }
 
   registerUser() {
-    this.navCtrl.push(Dashboard);
+    this.navCtrl.setRoot(Dashboard);
   }
 
 }

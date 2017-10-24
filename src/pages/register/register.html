@@ -37,7 +37,7 @@
     </ion-list>
     <h1>A Few Questions</h1>
     <p> Do you have asthma? </p>
-    <ion-list radio-group [(ngModel)]="Questions">
+    <ion-list radio-group [(ngModel)]="asthmaYN">
         <ion-item>
             <ion-label>Yes</ion-label>
             <ion-radio value="true"></ion-radio>
@@ -52,7 +52,7 @@
         <ion-input type="text"></ion-input>
     </ion-item>
     <p> Do you know someone with asthma? </p>
-    <ion-list radio-group [(ngModel)]="Questions">
+    <ion-list radio-group [(ngModel)]="otherYN">
         <ion-item>
             <ion-label>Yes</ion-label>
             <ion-radio value="true"></ion-radio>
