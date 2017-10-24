@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Dashboard } from '../dashboard/dashboard';
 
 /**
- * Generated class for the RegisterPage page.
+ * Generated class for the DashboardPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { Dashboard } from '../dashboard/dashboard';
 
 @IonicPage()
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html',
+  selector: 'page-dashboard',
+  templateUrl: 'dashboard.html',
 })
-export class RegisterPage {
+export class Dashboard {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
-  }
-
-  registerUser() {
-    this.navCtrl.push(Dashboard);
+    console.log('ionViewDidLoad DashboardPage');
   }
 
 }
