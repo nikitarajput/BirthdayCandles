@@ -1,13 +1,23 @@
 page-dashboard {
     p {
-        margin: 0px;
+        margin: 2px;
     }
     #welcome {
         background-color: green;
         color: white;
     }
-    ion-col{
-        margin:0px;
-        padding: 0px;
+    ion-card {
+        margin-bottom: -8.5px !important;
+    }
+    ion-card.item.item-image {
+        width: 100vw;
+        margin-left: -.25px;
+    }
+    ion-card.bday {
+        margin-top: -5px !important;
+    }
+    ion-card.subitem.item-image {
+        width: 45vw;
+        margin-left: -.25px;
     }
 }
