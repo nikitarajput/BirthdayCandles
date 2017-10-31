@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import * as $ from 'jquery';
 
 /**
  * Generated class for the CreateCakePage page.
@@ -21,5 +22,12 @@ export class CreateCake {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreateCakePage');
   }
+  changeBackground(){
+    $('#cake').css('background-color', "gainsboro");
+  }
+
+  // addBorder() {
+  //   $('#cake').css('border', "solid 2px LIGHTSKYBLUE");
+  // }
 
 }

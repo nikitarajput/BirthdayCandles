@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { MyCakes } from './my-cakes/my-cakes';
-import { MyPhotos } from './my-photos/my-photos';
 
 /**
- * Generated class for the AlbumPage page.
+ * Generated class for the CakeStepsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,24 +10,16 @@ import { MyPhotos } from './my-photos/my-photos';
 
 @IonicPage()
 @Component({
-  selector: 'page-album',
-  templateUrl: 'album.html',
+  selector: 'page-cake-steps',
+  templateUrl: 'cake-steps.html',
 })
-export class Album {
+export class CakeStepsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlbumPage');
-  }
-
-  goToCakes(){
-    this.navCtrl.push(MyCakes);
-  }
-
-  goToPhotos(){
-    this.navCtrl.push(MyPhotos);
+    console.log('ionViewDidLoad CakeStepsPage');
   }
 
 }

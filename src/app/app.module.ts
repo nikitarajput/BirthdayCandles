@@ -13,6 +13,8 @@ import { ChestToday } from '../pages/chest-today/chest-today';
 import { CreateCake } from '../pages/create-cake/create-cake';
 import { PhotoBooth } from '../pages/photo-booth/photo-booth';
 import { Bdays } from '../pages/bdays/bdays';
+import { MyCakes } from '../pages/album/my-cakes/my-cakes';
+import { MyPhotos } from '../pages/album/my-photos/my-photos';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { Bdays } from '../pages/bdays/bdays';
     ChestToday,
     CreateCake,
     PhotoBooth,
-    Bdays
+    Bdays,
+    MyCakes,
+    MyPhotos
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { Bdays } from '../pages/bdays/bdays';
     ChestToday,
     CreateCake,
     PhotoBooth,
-    Bdays
+    Bdays,
+    MyCakes,
+    MyPhotos
   ],
   providers: [
     StatusBar,

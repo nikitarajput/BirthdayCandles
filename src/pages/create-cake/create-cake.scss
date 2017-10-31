@@ -1,6 +1,10 @@
 page-create-cake {
     .cake {
-        padding: 5px;
+        margin-bottom: 60px;
+    }
+
+    .cake.special {
+        border: solid 2px LIGHTSKYBLUE;
     }
 
 }

@@ -8,6 +8,11 @@
 
   <ion-navbar>
     <ion-title>Create a Cake</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toCakeSteps()">
+        Next <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -17,27 +22,35 @@
     <h3> Cake Styles </h3>
     <ion-grid>
         <ion-row>
-            <ion-col col-6 class="cake">
+            <ion-col col-6 class="cake" id="cake" (click)="addBorder()">
                 <img src="../../assets/imgs/cakes/cake1.png"/>
             </ion-col>
-            <ion-col col-6>
+            <ion-col col-6 class="cake" (click)="changeBackground()">
                 <img src="../../assets/imgs/cakes/cake2.png"/>
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col col-6>
+            <ion-col col-6 class="cake">
                 <img src="../../assets/imgs/cakes/cake3.png"/>
             </ion-col>
-            <ion-col col-6>
+            <ion-col col-6 class="cake">
                 <img src="../../assets/imgs/cakes/cake4.png"/>
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col col-6>
+            <ion-col col-6 class="cake">
                 <img src="../../assets/imgs/cakes/cake5.png"/>
             </ion-col>
-            <ion-col col-6>
+            <ion-col col-6 class="cake">
                 <img src="../../assets/imgs/cakes/cake6.png"/>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                More...
+            </ion-col>
+            <ion-col col-6>
+                +Custom Cake
             </ion-col>
         </ion-row>
     </ion-grid>

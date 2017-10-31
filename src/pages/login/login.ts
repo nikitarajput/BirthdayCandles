@@ -10,7 +10,7 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController) {}
 
-  goToOtherPage() {
+  goToRegister() {
     this.navCtrl.push(RegisterPage);
   }
 
