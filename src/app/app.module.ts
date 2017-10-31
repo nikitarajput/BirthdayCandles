@@ -8,13 +8,23 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Album } from '../pages/album/album';
+import { ChestToday } from '../pages/chest-today/chest-today';
+import { CreateCake } from '../pages/create-cake/create-cake';
+import { PhotoBooth } from '../pages/photo-booth/photo-booth';
+import { Bdays } from '../pages/bdays/bdays';
 
 @NgModule({
   declarations: [
     MyApp,
     LoginPage,
     RegisterPage,
-    Dashboard
+    Dashboard,
+    Album,
+    ChestToday,
+    CreateCake,
+    PhotoBooth,
+    Bdays
   ],
   imports: [
     BrowserModule,
@@ -25,7 +35,12 @@ import { Dashboard } from '../pages/dashboard/dashboard';
     MyApp,
     LoginPage,
     RegisterPage,
-    Dashboard
+    Dashboard,
+    Album,
+    ChestToday,
+    CreateCake,
+    PhotoBooth,
+    Bdays
   ],
   providers: [
     StatusBar,
