@@ -12,19 +12,20 @@ Please refer to this [prototype](goo.gl/3jWCbs) for optimal experience.
 
 ## Getting Started
 
-1. Clone the Repository
+1. Be sure to have [npm](https://www.npmjs.com/get-npm) and [ionic-cordova](https://ionicframework.com/getting-started) installed
+2. Clone the Repository
 
     As usual, you get started by cloning the project to your local machine:
     ```
-    $ git: //github.com/nikitarajput/AirPal.git
+    $ git: //github.com/nikitarajput/BirthdayCandles.git
     ```
 2. Open and Run Project
     ```
-    $ git: //github.com/nikitarajput/AirPal.git
+    $ ionic cordova emulate ios —target=”DEVICE” -l
     ```
 
 ## Built Using
-Ionic Framework
+[Ionic Framework](https://ionicframework.com/)
 
 ## Credits
 [Nikita Rajput](https://github.gatech.edu/nikitarajput)
