@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { CakeSteps } from './cake-steps/cake-steps';
 import { AddCandle } from './add-candle/add-candle';
 import * as $ from 'jquery';
@@ -20,12 +20,13 @@ export class CreateCake {
 
     private clicked;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
       this.clicked = 0;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad sCreateCakePage');
+    this.showConfirm();
   }
 
   addBorder() {
@@ -35,5 +36,25 @@ export class CreateCake {
     } else{
       $(event.currentTarget).css("border", "0px");
     }
+  }
+
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'Quick Fact',
+      message: 'According to the CDC, 1 in 12 people have asthma.',
+      buttons: [
+        {
+          text: 'Got it!',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present();
+  }
+
+  toCakeSteps(){
+    this.navCtrl.push(CakeSteps);
   }
 }

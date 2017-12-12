@@ -1,6 +1,10 @@
 page-create-cake {
     .cake {
+        padding: 10px;
         margin-bottom: 60px;
+    }
+    .mainCake {
+        background-color: PaleTurquoise;
     }
 
     img.highlight { border: 5px solid blue; }

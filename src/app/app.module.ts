@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http'
+import { Camera } from '@ionic-native/camera';
 
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
@@ -12,6 +13,7 @@ import { Dashboard } from '../pages/dashboard/dashboard';
 import { Album } from '../pages/album/album';
 import { ChestToday } from '../pages/chest-today/chest-today';
 import { CreateCake } from '../pages/create-cake/create-cake';
+import { CakeSteps } from '../pages/create-cake/cake-steps/cake-steps';
 import { PhotoBooth } from '../pages/photo-booth/photo-booth';
 import { Bdays } from '../pages/bdays/bdays';
 import { FeaturedBday } from '../pages/bdays/featured-bday/featured-bday';
@@ -28,6 +30,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     Album,
     ChestToday,
     CreateCake,
+    CakeSteps,
     PhotoBooth,
     Bdays,
     FeaturedBday,
@@ -48,6 +51,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     Album,
     ChestToday,
     CreateCake,
+    CakeSteps,
     PhotoBooth,
     Bdays,
     FeaturedBday,
@@ -55,6 +59,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     MyPhotos
   ],
   providers: [
+    Camera,
     StatusBar,
     SplashScreen,
     InAppBrowser,

@@ -7,12 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>cakeSteps</ion-title>
+    <ion-title>Create A Cake</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-row mainCake>
+    <ion-col col><h4>Nikita's Birthday <br/> July 5th</h4></ion-col>
+    <ion-col col class="cake" text-center><img src="../../assets/imgs/cakes/cake2.png"/></ion-col>
+  </ion-row>
+  <ion-grid>
+      <ion-row>
+  <ion-col col-2><img src="../../assets/imgs/cakes/singleCandle.png"/></ion-col>
+  <ion-col col-8><h4>Add A Candle</h4>Start off your Cake with your own birthday candle.</ion-col>
+      <ion-col col-2><button ion-button clear item-end large (click)="featuredBday()"><ion-icon name="arrow-dropright"></ion-icon></button></ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-2><img src="../../assets/imgs/cakes/multiCandles.png"/></ion-col>
+<ion-col col-8><h4>Share Your Cake</h4>Your friends will be able to add Birthday Candles to your Cake. They’ll have the option to donate to support Asthma research.</ion-col>
+  <ion-col col-2><button ion-button clear item-end large (click)="featuredBday()"><ion-icon name="arrow-dropright"></ion-icon></button></ion-col>
+</ion-row>
+</ion-grid>
 
 </ion-content>
