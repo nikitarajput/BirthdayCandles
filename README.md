@@ -1,26 +1,33 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Birthday Candles
+CS4699 Project
 
-## How to use this template
+Advisor: Rosa Arriaga
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+![](https://github.com/nikitarajput/BirthdayCandles/blob/master/resources/ios/splash/Default~iphone.png) 
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Background
+According to the CDC, 1 out of 12 people have Asthma. From researching the area of interactive computing and chronic care management, it has been proven that using information and communication technologies can improve health outcomes in addition to taking several factors into consideration. This app was created to address the social awareness factor for Asthma. Birthday Candles is an interactive social platform for people with and without Asthma to come together by creating and sharing birthday cakes. 
 
-### With the Ionic CLI:
+Please refer to this [prototype](goo.gl/3jWCbs) for optimal experience.
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## Getting Started
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+1. Clone the Repository
 
-Then, to run it, cd into `myBlank` and run:
+    As usual, you get started by cloning the project to your local machine:
+    ```
+    $ git: //github.com/nikitarajput/AirPal.git
+    ```
+2. Open and Run Project
+    ```
+    $ git: //github.com/nikitarajput/AirPal.git
+    ```
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+## Built Using
+Ionic Framework
+
+## Credits
+[Nikita Rajput](https://github.gatech.edu/nikitarajput)
 
 Substitute ios for android if not on a Mac.
 
