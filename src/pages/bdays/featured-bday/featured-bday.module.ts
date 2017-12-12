@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { FeaturedBdayPage } from './featured-bday';
+import { FeaturedBday } from './featured-bday';
 
 @NgModule({
   declarations: [
-    FeaturedBdayPage,
+    FeaturedBday,
   ],
   imports: [
-    IonicPageModule.forChild(FeaturedBdayPage),
+    IonicPageModule.forChild(FeaturedBday),
   ],
 })
-export class FeaturedBdayPageModule {}
+export class FeaturedBdayModule {}

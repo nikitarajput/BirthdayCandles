@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpModule } from '@angular/http'
 
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
@@ -13,8 +14,10 @@ import { ChestToday } from '../pages/chest-today/chest-today';
 import { CreateCake } from '../pages/create-cake/create-cake';
 import { PhotoBooth } from '../pages/photo-booth/photo-booth';
 import { Bdays } from '../pages/bdays/bdays';
+import { FeaturedBday } from '../pages/bdays/featured-bday/featured-bday';
 import { MyCakes } from '../pages/album/my-cakes/my-cakes';
 import { MyPhotos } from '../pages/album/my-photos/my-photos';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,14 @@ import { MyPhotos } from '../pages/album/my-photos/my-photos';
     CreateCake,
     PhotoBooth,
     Bdays,
+    FeaturedBday,
     MyCakes,
-    MyPhotos
+    MyPhotos,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,12 +50,14 @@ import { MyPhotos } from '../pages/album/my-photos/my-photos';
     CreateCake,
     PhotoBooth,
     Bdays,
+    FeaturedBday,
     MyCakes,
     MyPhotos
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

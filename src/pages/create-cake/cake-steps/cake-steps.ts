@@ -13,7 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-cake-steps',
   templateUrl: 'cake-steps.html',
 })
-export class CakeStepsPage {
+export class CakeSteps {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -5,14 +5,28 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>featuredBday</ion-title>
+    <ion-title>Featured Birthday</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-row text-center>
+        <ion-col col id="trickBday">
+            <b> It's actually not his birthday!</b>
+        </ion-col>
+    </ion-row>
+    <ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src={{output[2][1]}}>
+    </ion-col>
+    <ion-col>
+      <h6><b>Burton Lesnick, MD</b><br/><b>Birthday:</b> unknown<br/><b>Age:</b> unknown<br/></h6>
+      <button ion-button round small (click)="goToCreateCake()">Give Cake!</button>
+    </ion-col>
+  </ion-row>
+    <h6 text-center>Dr. Burton Lesnick is a pediatric pulmonologist in Atlanta, Georgia and is affiliated with multiple hospitals in the area, including Children's Healthcare of Atlanta and Northside Hospital. He received his medical degree from Boston University School of Medicine and has been in practice for more than 20 years. Dr. Lesnick accepts several types of health insurance, listed below. He is one of 15 doctors at Children's Healthcare of Atlanta and one of 9 at Northside Hospital who specialize in Pediatric Pulmonology.</h6>
+</ion-grid>
 </ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CakeSteps } from './cake-steps/cake-steps';
+import { AddCandle } from './add-candle/add-candle';
 import * as $ from 'jquery';
 
 /**
@@ -16,18 +18,22 @@ import * as $ from 'jquery';
 })
 export class CreateCake {
 
+    private clicked;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+      this.clicked = 0;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CreateCakePage');
-  }
-  changeBackground(){
-    $('#cake').css('background-color', "gainsboro");
+    console.log('ionViewDidLoad sCreateCakePage');
   }
 
-  // addBorder() {
-  //   $('#cake').css('border', "solid 2px LIGHTSKYBLUE");
-  // }
-
+  addBorder() {
+    this.clicked++;
+    if(this.clicked % 2 != 0) {
+      $(event.currentTarget).css("border", "solid 2px SkyBlue");
+    } else{
+      $(event.currentTarget).css("border", "0px");
+    }
+  }
 }

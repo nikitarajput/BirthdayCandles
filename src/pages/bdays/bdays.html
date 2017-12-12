@@ -7,21 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Featured Birthdays</ion-title>
+    <ion-title>Today's Birthdays</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
     <ion-list>
-        <ion-item>
+        <ion-item *ngFor="let bday of bdays">
             <ion-thumbnail item-start>
-                <img src="img/thumbnail-totoro.png">
+                <img src={{bday[1]}}>
             </ion-thumbnail>
-            <h2>Some name</h2>
-            <p>Actor • 1988</p>
-            <button ion-button clear item-end large><ion-icon name="arrow-dropright"></ion-icon></button>
+            <h2>{{ bday[0] }}</h2>
+            <p>{{ bday[2] }}</p>
+            <button ion-button clear item-end large (click)="featuredBday()"><ion-icon name="arrow-dropright"></ion-icon></button>
         </ion-item>
     </ion-list>
 </ion-content>

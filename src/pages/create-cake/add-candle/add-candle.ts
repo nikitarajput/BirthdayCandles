@@ -13,7 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-add-candle',
   templateUrl: 'add-candle.html',
 })
-export class AddCandlePage {
+export class AddCandle {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

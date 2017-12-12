@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { AddCandlePage } from './add-candle';
+import { AddCandle } from './add-candle';
 
 @NgModule({
   declarations: [
-    AddCandlePage,
+    AddCandle,
   ],
   imports: [
-    IonicPageModule.forChild(AddCandlePage),
+    IonicPageModule.forChild(AddCandle),
   ],
 })
 export class AddCandlePageModule {}
